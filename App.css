@@ -1,0 +1,11 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: sans-serif;
+  background-color: rgb(26, 26, 58) !important;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  color: white;
+}

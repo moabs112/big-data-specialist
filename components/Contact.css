@@ -1,0 +1,387 @@
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  border-radius: 2.5em;
+  padding: 30px;
+  width: 63.5%;
+  height: 350px;
+}
+
+.form::before {
+  content: '';
+  background-image: linear-gradient(45deg, #ff0000, 
+  #ffb700);
+  height: 358px;
+  width: 60%;
+  position: absolute;
+  margin-top: -34px;
+  
+  z-index: -1;
+  border-radius: 2.7em;
+}
+
+.button {
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  background: #ff5900;
+  color: black;
+  padding: 0.7em 5.5em;
+  display: flex;
+  align-items: center;
+  border: 2px solid #66da4300;
+  border-radius: 5em;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.button:hover {
+  border: 2px solid #ff5900;
+  background: #00000000;
+  color: #ff5900;
+}
+
+.button:active {
+  border: 2px solid #66da4300;
+  background: #ff5900;
+  color: black;
+}
+
+.input {
+  width: calc(100% - 10px);
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ff5900;
+  outline: none;
+  background-color: transparent;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.2s;
+}
+
+.input:focus {
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ff5900;
+  background-color: transparent;
+  color: black;
+}
+
+.input::placeholder {
+  color: black;
+}
+
+.textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  width: calc(100% - 10px);
+  padding: 8px;
+  height: 100px;
+  margin-bottom: 20px;
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ff5900;
+  outline: none;
+  background-color: transparent;
+  color: black;
+}
+
+.textarea::placeholder {
+  color: black;
+}
+
+.textarea:focus {
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ff5900;
+  background-color: transparent;
+  color: black;
+}
+
+
+.back-top {
+  width: 100px;
+  height: 56px;
+  overflow: hidden;
+  border: none;
+  color: #fff;
+  background: none;
+  position: relative;
+  padding-bottom: 2em;
+}
+
+.back-top > div,
+button > svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.back-top:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  background: currentColor;
+  transition: transform 0.25s ease-out;
+}
+
+.back-top:hover:before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.back-top .clone > *,
+button .text > * {
+  opacity: 1;
+  font-size: 0.8rem;
+  transition: 0.2s;
+  margin-left: 4px;
+}
+
+.back-top .clone > * {
+  transform: translateY(60px);
+}
+
+.back-top:hover .clone > * {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.back-top:hover .text > * {
+  opacity: 1;
+  transform: translateY(-60px);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.back-top:hover .clone > :nth-child(1) {
+  transition-delay: 0.15s;
+}
+
+.back-top:hover .clone > :nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.back-top:hover .clone > :nth-child(3) {
+  transition-delay: 0.25s;
+}
+
+.back-top:hover .clone > :nth-child(4) {
+  transition-delay: 0.3s;
+}
+/* icon style and hover */
+button svg {
+  width: 20px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(-50deg);
+  transition: 0.2s ease-out;
+}
+
+.back-top:hover svg {
+  transform: translateY(-50%) rotate(-90deg);
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card1:hover  {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #03a9f4;
+}
+
+.card2:hover  {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: rgb(10, 163, 10);
+}
+
+.card3:hover  {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #8c9eff;
+}
+
+.card4:hover  {
+  fill: white;
+}
+
+
+
+@media screen and (max-width: 992px) {
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .form {
+    width: 250px;
+  }
+  .form::before {
+    width: 259px;
+  }
+  .button {
+    padding: 0.7em 4.5em !important;
+  }
+  .instagram {
+  width: 20px !important;
+}
+.discord {
+  width: 25px !important;
+}
+.whatsapp {
+  width: 30px !important;
+}
+.linkedin {
+  width: 30px  !important;
+}
+}
+
+@media screen and (max-width: 576px) {
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    width: 35px;
+    height: 35px;
+  }
+  .instagram {
+  width: 12px !important;
+}
+.discord {
+  width: 15px !important;
+}
+.whatsapp {
+  width: 16px !important; 
+}
+.linkedin {
+  width: 20px !important;
+}
+
+.form-con {
+  width: 100%;
+}
+
+label {
+  font-size: 0.8rem !important;
+}
+.contact-btn {
+  font-size: 0.8rem !important;
+}
+ 
+}
+.instagram {
+  width: 25px;
+}
+.discord {
+  width: 30px;
+}
+.whatsapp {
+  width: 35px;
+}
+.linkedin {
+  width: 40px;
+}
+@media screen and (max-width: 768px) {
+  .form-con {
+    width: 80%;
+  }
+}

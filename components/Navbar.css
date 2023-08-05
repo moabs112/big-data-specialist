@@ -1,0 +1,42 @@
+.nav-links {
+  padding: 0 10px;
+  text-decoration: none;
+  color: white;
+  transition: 0.6s;
+  border-radius: 8px;
+  font-family: sans-serif;
+  font-size: 20px;
+  background-image: linear-gradient(transparent 0%,transparent 90%, #ff6347 90%, #ff6347 100% );
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 300ms;
+}
+
+.navbar-brand:hover {
+  color: #ff6347;
+}
+.navbar-brand:visited {
+  color: #ff6347;
+}
+.nav-links:active {
+  text-decoration: none;
+  color: white;
+}
+.nav-links:any-link {
+  text-decoration: none;
+  color: white;
+}
+.navbar-toggler {
+  color: white;
+  background-color: white;
+}
+.nav-links:hover {
+  color: #ff6347;
+  transition: 0.6s;
+  background-size: 100% 100%;
+  background-position-x: left;
+}
+.logo {
+    width: 100px;
+}
